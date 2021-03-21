@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | 3DWorld</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1440px; height: 775px; background: #231F20"></canvas>
+    <script src="Build/InterimBuild.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/InterimBuild.data",
+        frameworkUrl: "Build/InterimBuild.framework.js",
+        codeUrl: "Build/InterimBuild.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "3DWorld",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
